@@ -1,7 +1,7 @@
 // src/app/projects/[slug]/page.tsx
 import { Metadata } from 'next'
 import { getProject } from '@/lib/projects'
-import ProjectDetailComponent from '@/components/projects/ProjectDetail'
+import ProjectDetail from '@/components/projects/ProjectDetail'
 
 export async function generateMetadata(
     { params }: { params: { slug: string } }
@@ -34,5 +34,5 @@ export default async function ProjectPage({ params }: { params: { slug: string }
         return <div>Project not found</div>
     }
 
-    return <ProjectDetailComponent project={project} />
+    return <ProjectDetail project={project} />
 }
