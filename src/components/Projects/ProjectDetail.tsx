@@ -313,6 +313,7 @@
 // }
 
 // src/components/projects/ProjectDetail.tsx
+
 'use client'
 
 import { useState } from 'react'
