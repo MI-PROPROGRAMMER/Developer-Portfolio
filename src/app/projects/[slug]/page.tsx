@@ -1,6 +1,6 @@
 // src/app/projects/[slug]/page.tsx
 import { Metadata } from 'next'
-import { getProject } from '@/lib/projects'
+import { getProject, getProjects } from '@/lib/projects'
 import ProjectDetail from '@/components/projects/ProjectDetail'
 
 export async function generateMetadata(
@@ -31,7 +31,11 @@ export default async function ProjectPage({ params }: { params: { slug: string }
     const project = await getProject(params.slug)
 
     if (!project) {
-        return <div>Project not found</div>
+        return (
+            <div className="min-h-screen flex items-center justify-center text-white">
+                Project not found
+            </div>
+        )
     }
 
     return <ProjectDetail project={project} />
