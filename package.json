@@ -12,15 +12,12 @@
     "@headlessui/react": "^2.2.0",
     "@heroicons/react": "^2.2.0",
     "@prisma/client": "^6.0.1",
-    "@react-three/drei": "^9.120.4",
-    "@react-three/fiber": "^8.17.10",
     "date-fns": "^4.1.0",
     "framer-motion": "^11.14.3",
     "gsap": "^3.12.5",
     "next": "15.1.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "three": "^0.171.0"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
